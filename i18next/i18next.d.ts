@@ -121,7 +121,7 @@ interface I18nextStatic {
         load: (languages: string[], options: I18nextOptions, callback: (err: Error, store: IResourceStore) => void ) => void;
         postMissing: (language: string, namespace: string, key: string, defaultValue: any, languages: string[]) => void;
     };
-    t(key: string, options?: I18nTranslateOptions): string|Object|Array;
+    t(key: string, options?: I18nTranslateOptions): string|Object|Array<any>;
     translate(key: string, options?: I18nTranslateOptions): string;
     exists(key: string, options?: any): boolean;
 }
